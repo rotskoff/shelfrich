@@ -825,13 +825,14 @@ int graph::select_random_fission_partner(int vi, gsl_rng *r)
 void graph::add_fission_vertices(int vi, gsl_rng *r)
 {
   double rad, theta, phi, dx, dy, dz;
+  // choose a point in the sphere of radius lfuse
+  // http://mathworld.wolfram.com/SpherePointPicking.html
   rad = lfuse * gsl_rng_uniform(r);
-  theta = pi * gsl_rng_uniform(r);
+  theta = acos(2 * gsl_rng_uniform(r) - 1);
   phi = 2 * pi * gsl_rng_uniform(r);
   dx = rad * sin(theta) * cos(phi);
   dy = rad * sin(theta) * sin(phi);
   dz = rad * cos(theta);
-  // choose a point in the sphere of radius lfuse
   // find the other new vertex v2
   double v1x, v1y, v1z, v2x, v2y, v2z;
   v1x = v[vi][0]+dx;

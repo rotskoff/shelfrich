@@ -3,7 +3,7 @@ of elastic shells around fluctuating lattice gas cargo.
 
 Details of the model and its Monte Carlo moves can be found in our paper: 
 
-  [Robust nonequilibrium pathways to microcompartment assembly](https://doi.org/10.1073/pnas.1802499115).
+ - [Rotskoff, Grant M. and Geissler, Phillip L., Robust nonequilibrium pathways to microcompartment assembly, *Proc. Natl. Acad. Sci. USA*, 2018](https://doi.org/10.1073/pnas.1802499115).
   
 Also available on the [arXiv:1709.00321](https://arxiv.org/abs/1709.00321).
 
